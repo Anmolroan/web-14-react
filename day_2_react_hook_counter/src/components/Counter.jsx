@@ -1,5 +1,5 @@
 import React from "react";
-
+import  "./counter.css"
 function Counter() {
     const [counter,setCounter]=React.useState(0);
 function handleInc(value){
