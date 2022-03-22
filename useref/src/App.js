@@ -1,16 +1,18 @@
 import React from 'react';
 import './App.css';
 import {useState,useRef} from 'react'
+import Form from './components/Form.jsx'
 
 function App() {
-  const inputRef =useRef(null)
+  // const inputRef =useRef(null)
   return (
     <div className="App">
-     <h1>useref</h1>
+     {/* <h1>useref</h1>
   <input ref={inputRef}/>
   <button onClick={()=>{console.log(inputRef.current)}}>
     get Input box
-  </button>
+  </button> */}
+<Form/>
     </div>
   );
 }
