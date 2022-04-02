@@ -1,12 +1,13 @@
 
 import './App.css';
-import GroceryInput from './components/GroceryInput';
+import Grocery from './components/Grocery';
+
 
 function App() {
   return (
     <div className="App">
       <h1>Grocery</h1>
-      <GroceryInput/>
+      <Grocery/>
     </div>
   );
 }

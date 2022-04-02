@@ -1,9 +1,9 @@
 import React from 'react'
 
-function GroceryList({title,status}) {
+function GroceryList() {
   return (
     <div>
-        <h3>{`${title} - ${status}`}</h3>
+        <h3>list</h3>
     </div>
   )
 }

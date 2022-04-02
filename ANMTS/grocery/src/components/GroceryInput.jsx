@@ -1,35 +1,18 @@
 import React from 'react'
 import {useState} from "react"
-import GroceryList from "./GroceryList";
 
-function GroceryInput() {
-    const [query,setQuery]=useState("");
-    const [task,setTasks]=useState([]);
-    const handleChange=(e)=>{
-setQuery(e.target.value);
-
+function GroceryInput({getData}) {
+    const [text ,setText] =useState("");
+    const handleChange =(e) => {
+        setText(e.target.value)
     }
-    const handleAdd =()=>{
-        const payload ={
-            title:query,
-            status:false
-        }
-        const newTasks=[...task,payload];
-        setTasks(newTasks);
-        console.log(task);
+    const handleData = () => {
+getData(text);
     }
-  
   return (
-    <div>GroceryInput
-    <input  onChange={handleChange} value={query}/>
-    <button onClick={handleAdd}>ADD</button>
-    <div>{
-     task.map((item) =>{
-         return <div>
-        <GroceryList {...item}/>
-         </div>;
-     })
-    }</div>
+    <div>
+    <input type="text" placeholder="Enter todo" onChange={handleChange}/>
+    <button onClick={handleData}>Add todo</button>
     </div>
   )
 }
