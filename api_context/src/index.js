@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import CartContextProvider from "./contexts/CartContext.jsx"
-// import {ThemeContextProvider} from "./contexts/ThemeContext.jsx"
+import {CartContextProvider} from "./contexts/CartContext.jsx"
+import {ThemeContextProvider} from "./contexts/ThemeContext.jsx"
 ReactDOM.render(
   
   <React.StrictMode>
   <CartContextProvider>   
-  {/* <ThemeContextProvider> */}
+  <ThemeContextProvider>
   <App />
-  {/* </ThemeContextProvider> */}
+  </ThemeContextProvider>
    
     </CartContextProvider>
   </React.StrictMode>
