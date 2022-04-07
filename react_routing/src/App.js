@@ -4,7 +4,10 @@ import Home from './components/Home.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 import Navbar from './components/Navbar.jsx'
+import Products from './components/Products.jsx';
+import Users from './components/Users.jsx';
 import {Route ,Routes} from "react-router-dom";
+import Userdetails from './components/Userdetails.jsx'
 function App() {
   return (
     <div className="App">
@@ -19,7 +22,10 @@ function App() {
     <Route path="/Contact" element ={ <Contact/>}>
    
    </Route>
-    
+   <Route path="/product/:id" element ={ <Products/>}></Route>
+   
+   <Route path="/users" element ={ <Users/>}></Route>
+   <Route path="/users/:userid" element ={ <Userdetails/>}></Route>
     </Routes>
 
     </div>
