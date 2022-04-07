@@ -6,6 +6,7 @@ import Contact from './components/Contact.jsx';
 import Navbar from './components/Navbar.jsx'
 import Products from './components/Products.jsx';
 import Users from './components/Users.jsx';
+import Login from "./components/Login.jsx";
 import {Route ,Routes} from "react-router-dom";
 import Userdetails from './components/Userdetails.jsx'
 function App() {
@@ -26,6 +27,7 @@ function App() {
    
    <Route path="/users" element ={ <Users/>}></Route>
    <Route path="/users/:userid" element ={ <Userdetails/>}></Route>
+   <Route path="/login" element ={ <Login/>}></Route>
     </Routes>
 
     </div>
