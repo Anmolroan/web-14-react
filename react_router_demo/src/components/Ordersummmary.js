@@ -4,7 +4,8 @@ function Ordersummmary() {
   const navigate =useNavigate();
   return (
     <>
-    <div>Ordersummmary</div>
+    <div>Order Confirmed</div>
+    {/* for going back */}
     <button onClick={()=>navigate(-1)}>go back</button>
     </>
   )

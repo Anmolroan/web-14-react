@@ -5,6 +5,7 @@ function Home() {
   return (
     <div>
     <div>Home</div>
+    {/* useNavigate means where you are going */}
     <button onClick={()=>navigate('order')}>place order</button>
     
     </div>
