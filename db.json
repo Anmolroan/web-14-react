@@ -1,19 +1,122 @@
 {
-  "posts": [
+  "houses": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "status": "Bachelors",
+      "name": "Anmol",
+      "address": "aaaaaa",
+      "rent": "1",
+      "ownerName": "qq",
+      "areaCode": "111",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "status": "Bachelors",
+      "name": "Anmol",
+      "address": "aaaaaa",
+      "rent": "2",
+      "ownerName": "qq",
+      "areaCode": "111",
+      "id": 2
+    },
+    {
+      "status": "Bachelors",
+      "name": "Anmol",
+      "address": "aaaaaa",
+      "rent": "3",
+      "ownerName": "qq",
+      "areaCode": "111",
+      "id": 3
+    },
+    {
+      "name": "Anmol",
+      "ownerName": "aa",
+      "address": "aaaaaa",
+      "areaCode": "12",
+      "rent": "67",
+      "preferredTenants": "bachelor",
+      "image": "https://media.gettyimages.com/photos/celebrities-posing-for-paparazzi-on-red-carpet-picture-id130406997?k=20&m=130406997&s=612x612&w=0&h=LH6BxG26gMM1y44USbbi_OIVH1n-EWG6taiRsJ-t2gg=",
+      "id": 4
+    },
+    {
+      "name": "Anmol",
+      "owner_name": "123",
+      "address": "aaaaaa",
+      "area_code": "1223",
+      "rent": "1111",
+      "bachelor": true,
+      "id": 5
+    },
+    {
+      "bachelor": true,
+      "married": false,
+      "name": "Anmol",
+      "ownerName": "aa",
+      "address": "aaaaaa",
+      "areaCode": "111",
+      "rent": "1111",
+      "image": "https://media.gettyimages.com/photos/celebrities-posing-for-paparazzi-on-red-carpet-picture-id130406484?k=20&m=130406484&s=612x612&w=0&h=TP3vy8bvIg50vS7Sk2xZrqkyl6HnzzeI1D_C7UFAd_k=",
+      "id": 6
+    },
+    {
+      "name": "Anmol",
+      "ownerName": "aa",
+      "address": "aaaaaa",
+      "areaCode": "111",
+      "rent": "1111",
+      "preferredTenant": "bachelor",
+      "image": "https://media.gettyimages.com/photos/celebrity-signing-autographs-on-red-carpet-picture-id130406871?k=20&m=130406871&s=612x612&w=0&h=_h2A2QSosvH25ibC5LD8B_XlbeYVGTNM-1DVST9cFqM=",
+      "id": 7
+    },
+    {
+      "name": "Anmol",
+      "ownerName": "aa",
+      "address": "asawftsrfdgdfsdddas",
+      "areaCode": "111",
+      "rent": "11`3245w65756787808",
+      "bachelor": false,
+      "married": false,
+      "image": "https://media.gettyimages.com/photos/celebrities-posing-for-paparazzi-on-red-carpet-picture-id130406484?k=20&m=130406484&s=612x612&w=0&h=TP3vy8bvIg50vS7Sk2xZrqkyl6HnzzeI1D_C7UFAd_k=",
+      "id": 8
+    },
+    {
+      "name": "Anmol",
+      "ownerName": "aa",
+      "address": "aaaaaa",
+      "areaCode": "111",
+      "rent": "123",
+      "bachelor": true,
+      "image": "aaa",
+      "id": 9
+    },
+    {
+      "name": "Anmol",
+      "ownerName": "aa",
+      "address": "aaaaaa",
+      "areaCode": "111",
+      "rent": "1111",
+      "bachelor": true,
+      "image": "https://media.gettyimages.com/photos/celebrities-posing-for-paparazzi-on-red-carpet-picture-id130406997?k=20&m=130406997&s=612x612&w=0&h=LH6BxG26gMM1y44USbbi_OIVH1n-EWG6taiRsJ-t2gg=",
+      "id": 10
+    },
+    {
+      "name": "Anmol",
+      "ownerName": "aa",
+      "address": "aaaaaa",
+      "areaCode": "111",
+      "rent": "123",
+      "bachelor": true,
+      "image": "aaa",
+      "id": 11
+    },
+    {
+      "name": "awdsrt",
+      "ownerName": "ertgs",
+      "address": "asegd",
+      "rent": "g",
+      "image": "agsg",
+      "married": "",
+      "areaCode": "agss",
+      "id": 12
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
