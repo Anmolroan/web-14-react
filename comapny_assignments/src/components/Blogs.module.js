@@ -5,6 +5,7 @@ grid-template-columns: repeat(3,25%);
 gap:10%;
 `
 export const Header = styled.div`
+margin-top:4%;
 font-weight: 600;
 font-size:80%;
 padding-left: 2%;
