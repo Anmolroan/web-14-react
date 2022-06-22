@@ -1,9 +1,9 @@
 import React ,{useEffect} from 'react'
 import {useSelector,useDispatch} from 'react-redux';
-import {addTodo,addTodoLoading,addTodoSuccess,addTodoError,getTodoLoading,getTodoError,getTodoSuccess} from '../store/action';
+import {addTodo,addTodoLoading,addTodoSuccess,addTodoError,getTodoLoading,getTodoError,getTodoSuccess} from '../features/Todos/action';
 function Todo() {
     const [text,setText] =React.useState("");
-    const {loading, todos,error}=useSelector(state=>({loading:state.loading,todos:state.todos,error:state.error}));
+    const {loading, todos,error}=useSelector(state=>({loading:state.todoState.loading,todos:state.todoState.todos,error:state.todoState.error}));
     const dispatch =useDispatch();
     console.log(todos)
     useEffect(()=>{

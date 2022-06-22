@@ -1,3 +1,11 @@
-import {createStore} from "redux";
-import { reducer } from "./reducer";
-export const store = createStore(reducer);
+import {createStore,combineReducers} from "redux";
+import { reducer as TodoReducer} from "../features/Todos/reducer";
+import {reducer as CounterReducer} from "../features/Counter/reducer";
+
+const rootReducer = combineReducers({
+    counterState:CounterReducer,
+    todoState:TodoReducer
+})
+export const store = createStore(rootReducer);
+
+console.log("Entire store ",store.getState());
