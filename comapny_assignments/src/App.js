@@ -29,7 +29,7 @@ function App() {
   pic="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
  />
  <Testimonial  name="anmol kumar"
-
+ 
  quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nibh ipsum, dapibus non facilisis non, gravida ultrices metus. Etiam ullamcorper consectetur augue bibendum elementum. Cras volutpat eros vel porttitor bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non tortor"
   pic="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
  />

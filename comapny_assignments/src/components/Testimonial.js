@@ -3,7 +3,7 @@ import {TestimonialWrapper,Name,Quote,QuoteImage,Border}from './Testimonial.modu
 function Testimonial({name,quote,pic}) {
   return (
  
-    <TestimonialWrapper>
+    <TestimonialWrapper  >
         <Border>
         <QuoteImage><img src="https://cdn.xxl.thumbs.canstockphoto.com/quotes-icon-vector-illustration-isolated-on-white-background-drawing_csp82236093.jpg" alt =""></img></QuoteImage>
         <Quote>{quote}</Quote>
