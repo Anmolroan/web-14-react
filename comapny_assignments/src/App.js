@@ -2,6 +2,8 @@
 import './App.css';
 import Blogs from './components/Blogs';
 import { MakeItGrid } from './components/Blogs.module';
+import Choose from './components/Choose';
+import { ChooseGrid } from './components/Choose.module';
 import Testimonial from './components/Testimonial';
 import {TestimonialGrid,Name,Quote,QuoteImage,Borderred,Testimonialcol } from './components/Testimonial.module';
 function App() {
@@ -42,6 +44,26 @@ function App() {
  />
 </TestimonialGrid>
 
+
+{/* choose */}
+<ChooseGrid>
+<Choose header="VERIFIED PRODUCTS"
+ image="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
+ desc="lorem ipsum dolor sit amet, consectetur adip non pro id elit non proident et ullam et ullam et ullam et ullam et ullam et ullam et ullam et ullam et  ullam et ullam et ullam et ullam et ullam et  ullam et ullam et ullam et ullam et    "
+ />
+ <Choose header="Great Aeminities"
+ image="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
+ desc="lorem ipsum dolor sit amet, consectetur adip non pro id elit non proident et ullam et ullam et ullam et ullam et ullam et ullam et ullam et ullam et  ullam et ullam et ullam et ullam et ullam et  ullam et ullam et ullam et ullam et    "
+ />
+ <Choose header="Over 100+ Properties"
+ image="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
+ desc="lorem ipsum dolor sit amet, consectetur adip non pro id elit non proident et ullam et ullam et ullam et ullam et ullam et ullam et ullam et ullam et  ullam et ullam et ullam et ullam et ullam et  ullam et ullam et ullam et ullam et    "
+ />
+ <Choose header="Verified Owners"
+ image="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
+ desc="lorem ipsum dolor sit amet, consectetur adip non pro id elit non proident et ullam et ullam et ullam et ullam et ullam et ullam et ullam et ullam et  ullam et ullam et ullam et ullam et ullam et  ullam et ullam et ullam et ullam et    "
+ />
+ </ChooseGrid>
     </div>
   );
 }
