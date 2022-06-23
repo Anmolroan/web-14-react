@@ -20,4 +20,5 @@ display: grid;
 grid-template-columns:repeat(4,22%);
 gap:2%;
 background-color:rgb(50, 158, 168);
+padding-bottom:2%;
 `
