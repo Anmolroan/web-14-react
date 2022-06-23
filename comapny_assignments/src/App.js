@@ -46,7 +46,9 @@ function App() {
 
 
 {/* choose */}
+
 <ChooseGrid>
+
 <Choose header="VERIFIED PRODUCTS"
  image="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
  desc="lorem ipsum dolor sit amet, consectetur adip non pro id elit non proident et ullam et ullam et ullam et ullam et ullam et ullam et ullam et ullam et  ullam et ullam et ullam et ullam et ullam et  ullam et ullam et ullam et ullam et    "
