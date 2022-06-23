@@ -3,7 +3,7 @@ import './App.css';
 import Blogs from './components/Blogs';
 import { MakeItGrid } from './components/Blogs.module';
 import Testimonial from './components/Testimonial';
-import {TestimonialGrid} from './components/Testimonial.module';
+import {TestimonialGrid,Name,Quote,QuoteImage,Borderred,Testimonialcol } from './components/Testimonial.module';
 function App() {
   return (
     <div className="App">
@@ -28,11 +28,14 @@ function App() {
  quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nibh ipsum, dapibus non facilisis non, gravida ultrices metus. Etiam ullamcorper consectetur augue bibendum elementum. Cras volutpat eros vel porttitor bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non tortor"
   pic="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
  />
- <Testimonial  name="anmol kumar"
- 
- quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nibh ipsum, dapibus non facilisis non, gravida ultrices metus. Etiam ullamcorper consectetur augue bibendum elementum. Cras volutpat eros vel porttitor bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non tortor"
-  pic="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
- />
+ <Testimonialcol >
+ <Borderred>
+        <QuoteImage><img src="https://cdn.xxl.thumbs.canstockphoto.com/quotes-icon-vector-illustration-isolated-on-white-background-drawing_csp82236093.jpg" alt =""></img></QuoteImage>
+        <Quote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nibh ipsum, dapibus non facilisis non, gravida ultrices metus. Etiam ullamcorper consectetur augue bibendum elementum. Cras volutpat eros vel porttitor bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non tortor"</Quote>
+        </Borderred>
+        <img  className="dp"src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800" alt =""></img>
+        <Name>Anmol Kumar</Name>
+ </Testimonialcol>
  <Testimonial name="anmol kumar"
  quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nibh ipsum, dapibus non facilisis non, gravida ultrices metus. Etiam ullamcorper consectetur augue bibendum elementum. Cras volutpat eros vel porttitor bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non tortor"
   pic="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"

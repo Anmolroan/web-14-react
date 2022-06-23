@@ -6,7 +6,8 @@ text-align:center;
 padding:15%;
 `
 export const Border = styled.div`
-border: 1px solid;
+background-color:grey;
+margin-bottom:-10%;
 `
 export const Name = styled.div`
 font-size:70%;
@@ -39,4 +40,20 @@ display:grid;
 grid-template-columns: 23% 35% 23%;
 gap:5%;
 
+`
+export const Testimonialcol = styled.div`
+width:70%;
+margin-left: 20%;
+.dp{
+    width:30%;
+    height:30%;
+    border-radius: 50%;
+   
+
+}
+
+`
+export const Borderred = styled.div`
+background-color:red;
+margin-bottom:-10%;
 `
