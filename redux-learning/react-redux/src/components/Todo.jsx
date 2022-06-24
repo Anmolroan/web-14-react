@@ -1,6 +1,6 @@
 import React ,{useEffect} from 'react'
 import {useSelector,useDispatch} from 'react-redux';
-import {addTodo,addTodoLoading,addTodoSuccess,addTodoError,getTodoLoading,getTodoError,getTodoSuccess} from '../features/Todos/action';
+import {addTodo,addTodoLoading,addTodoSuccess,addTodoError,getTodoLoading,getTodoError,getTodoSuccess,getData} from '../features/Todos/action';
 function Todo() {
     const [text,setText] =React.useState("");
     const {loading, todos,error}=useSelector(state=>({loading:state.todoState.loading,todos:state.todoState.todos,error:state.todoState.error}));
@@ -11,14 +11,7 @@ function Todo() {
      getTodo();
     },[])
     async function getTodo(){
-      try{
-       dispatch(getTodoLoading())
-       let res=await fetch("http://localhost:3001/todos");
-       let data=await res.json();
-       dispatch(getTodoSuccess(data));
-      }catch(e){
-       dispatch(getTodoError(e))
-      }
+    dispatch(getData());
       }
   return  loading ?<div>...loading</div>:error?<div>Something went wrong</div>:(
     <div>
