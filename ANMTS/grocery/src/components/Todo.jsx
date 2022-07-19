@@ -1,5 +1,6 @@
 import React,{useReducer,useContext,useState} from 'react'
-import {context} from './contexts/Create'
+import {context} from './contexts/Create';
+import useTimeOut from './hooks/useTimeOut';
 function Todo() {
     const {count,handleADD} =useContext(context)
     const init ={
@@ -7,6 +8,7 @@ function Todo() {
         status:false,
        
     }
+    const show= useTimeOut(3000);
     const [title,setTitle] =useState("");
   
     const reducer =(action,state) => {
@@ -32,10 +34,13 @@ function Todo() {
     <input onChange={(e)=>setTitle(e.target.value)}></input>
     <button onClick={()=>dispatch({type:"ADD_TODO"})}>Add</button>
     <div>{state.title}</div>
-    <div>{count}</div>
-    <button onClick={()=>handleADD()}>add</button>
+{show?
+    <div><div>{count}</div>
+<button onClick={()=>handleADD()}>add</button>
+</div>:""}
   
     </div>
+   
   )
 }
 
